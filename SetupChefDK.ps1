@@ -15,6 +15,7 @@ choco install conemu --force --force-dependencies -y
 choco install winmerge --force --force-dependencies -y
 choco install vagrant --force --force-dependencies -y
 choco install autohotkey --force --force-dependencies -y
+choco install visualstudio2017community --package-parameters "--add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.Node --add Microsoft.VisualStudio.Component.DockerTools --add Microsoft.VisualStudio.Workload.Azure --includeRecommended --passive --locale en-US" --force --force-dependencies -y
 
 # Get a basic setup recipe
 invoke-restmethod 'https://gist.githubusercontent.com/smurawski/da67107b5efd00876af7bb0c8cfe8453/raw' | out-file -encoding ascii -filepath c:/basic.rb

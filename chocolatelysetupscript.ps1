@@ -13,13 +13,15 @@ choco install fiddler --force --force-dependencies -y
 choco install github --force --force-dependencies -y
 choco install poshgit --force --force-dependencies -y
 choco install azurestorageexplorer --force --force-dependencies -y
-choco install windowsazurepowershell --force --force-dependencies -y
+#Azurepowershell is disabled for now due to it closing the powershell window on install. 
+#choco install windowsazurepowershell --force --force-dependencies -y
 choco install visualstudiocode --force --force-dependencies -y
 # if you need sql management studio
 #choco install mssqlservermanagementstudio2014express
 choco install chefdk --force --force-dependencies -y
 choco install notepad2 --force --force-dependencies -y
-choco install srwareiron.install --force --force-dependencies -y
+#Need to find a replacement for srwareiron. best alternative for now is avira scout, but its not availble via chocolatey yet. 
+#choco install srwareiron.install --force --force-dependencies -y
 choco install 7zip.install --force --force-dependencies -y
 #if you need nodejs
 #cints node.js.install -version 4.4.7
@@ -35,4 +37,8 @@ shutdown /r /t 0 /d P:0:0
 #download telerik api testing https://www.telerik.com/download-trial-file/v2/teststudio-apis
 #download GitKraken  https://www.gitkraken.com/
 
-#
+#I personally do network test form my machine to others, so this stays. 
+choco install iperf3 --force --force-dependencies -y
+Install-Module -Name Psake
+Install-Module Pester -Force -SkipPublisherCheck
+Install-Module -Name PSScriptAnalyzer
