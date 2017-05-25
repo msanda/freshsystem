@@ -19,8 +19,7 @@ choco install visualstudiocode --force --force-dependencies -y
 # if you need sql management studio
 #choco install mssqlservermanagementstudio2014express
 
-#Chef install tools. 
-choco install chefdk --force --force-dependencies -y
+#notepad Alternative. i prefer notepad2 
 choco install notepad2 --force --force-dependencies -y
 
 #Need to find a replacement for srwareiron. best alternative for now is avira scout, but its not availble via chocolatey yet. 
