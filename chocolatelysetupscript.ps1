@@ -15,6 +15,7 @@ choco install azurestorageexplorer --force --force-dependencies -y
 #Azurepowershell is disabled for now due to it closing the powershell window on install. 
 #choco install windowsazurepowershell --force --force-dependencies -y
 choco install visualstudiocode --force --force-dependencies -y
+choco install vivaldi --force --force-dependencies -y
 
 # if you need sql management studio
 #choco install mssqlservermanagementstudio2014express
@@ -37,14 +38,16 @@ choco install fiddler4 --force --force-dependencies -y
 choco install pycharm-professional --force --force-dependencies -y
 choco install visualstudio2017enterprise --installargs "/ProductKey YOURKEYHERE /InstallSelectableItems WebTools;SQL;PowershellTools" -y
 
-# restart Computer after everything has been installed
-shutdown /r /t 0 /d P:0:0
-
-#download telerik api testing https://www.telerik.com/download-trial-file/v2/teststudio-apis
-#download GitKraken  https://www.gitkraken.com/
 
 #I personally do network test form my machine to others, so this stays. 
 choco install iperf3 --force --force-dependencies -y
 Install-Module -Name Psake
 Install-Module Pester -Force -SkipPublisherCheck
 Install-Module -Name PSScriptAnalyzer
+
+Invoke-Expression "cmd.exe /C start https://mix.office.com/Snip"
+#download telerik api testing https://www.telerik.com/download-trial-file/v2/teststudio-apis
+#download GitKraken  https://www.gitkraken.com/
+
+# restart Computer after everything has been installed
+shutdown /r /t 0 /d P:0:0
