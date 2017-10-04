@@ -5,7 +5,8 @@ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
 # sync what has already been installed with choclatey
 choco list -lo
-# install applications
+# update powershell
+choco install powershell
 
 # install sysinternals to  C:\ProgramData\chocolatey\lib\sysinternals\tools if you want to change the location use --params "'/installationpath:C:\ProgramData\sysinternals'"
 choco install sysinternals --force --force-dependencies -y  
