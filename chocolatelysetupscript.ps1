@@ -50,5 +50,8 @@ Invoke-Expression "cmd.exe /C start https://mix.office.com/Snip"
 #download telerik api testing https://www.telerik.com/download-trial-file/v2/teststudio-apis
 #download GitKraken  https://www.gitkraken.com/
 
+#Make SSH directory in you user space
+mkdir $env:USERPROFILE\.ssh
+
 # restart Computer after everything has been installed
 shutdown /r /t 0 /d P:0:0
