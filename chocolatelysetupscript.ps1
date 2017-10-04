@@ -6,7 +6,7 @@ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 # sync what has already been installed with choclatey
 choco list -lo
 # update powershell
-choco install powershell
+choco install powershell --force --force-dependencies -y
 
 # install sysinternals to  C:\ProgramData\chocolatey\lib\sysinternals\tools if you want to change the location use --params "'/installationpath:C:\ProgramData\sysinternals'"
 choco install sysinternals --force --force-dependencies -y  
@@ -49,6 +49,9 @@ Install-Module -Name PSScriptAnalyzer
 Invoke-Expression "cmd.exe /C start https://mix.office.com/Snip"
 #download telerik api testing https://www.telerik.com/download-trial-file/v2/teststudio-apis
 #download GitKraken  https://www.gitkraken.com/
+
+# to be installed if writing groovy specic code
+choco install groovy --force --force-dependencies -y
 
 #Make SSH directory in you user space
 mkdir $env:USERPROFILE\.ssh
