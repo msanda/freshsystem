@@ -53,3 +53,4 @@ New-Alias drmv  Remove-DanglingVolumes
 
 New-Alias dip Get-ContainerIPAddress
 
+Add-Content $profile "Import-Module posh-docker"
