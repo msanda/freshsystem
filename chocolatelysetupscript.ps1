@@ -16,7 +16,9 @@ choco install azurestorageexplorer --force --force-dependencies -y
 #Azurepowershell is disabled for now due to it closing the powershell window on install. 
 #choco install windowsazurepowershell --force --force-dependencies -y
 choco install visualstudiocode --force --force-dependencies -y
-choco install vivaldi --force --force-dependencies -y
+#browser Selection firefox quantum is my new default dev browser
+#choco install vivaldi --force --force-dependencies -y
+choco install firefox --force --force-dependencies -y
 
 # if you need sql management studio
 #choco install mssqlservermanagementstudio2014express
@@ -50,8 +52,14 @@ Invoke-Expression "cmd.exe /C start https://mix.office.com/Snip"
 #download telerik api testing https://www.telerik.com/download-trial-file/v2/teststudio-apis
 #download GitKraken  https://www.gitkraken.com/
 
-# to be installed if writing groovy specic code
+# to be installed if writing groovy specific code
 choco install groovy --force --force-dependencies -y
+
+# to be installed if writing python specific code
+choco install python --force --force-dependencies -y
+choco install ctags --force --force-dependencies -y
+python -m pip install --upgrade pip
+pip install pylint
 
 #Make SSH directory in you user space
 mkdir $env:USERPROFILE\.ssh
