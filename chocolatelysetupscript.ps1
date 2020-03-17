@@ -14,6 +14,9 @@ choco install powertoys --force --force-dependencies -y
 #install link shell extension
 choco install linkshellextension --force --force-dependencies -y
 
+#install imageglass phot viewer
+choco install imageglass --force --force-dependencies -y
+
 # install sysinternals to  C:\ProgramData\chocolatey\lib\sysinternals\tools if you want to change the location use --params "'/installationpath:C:\ProgramData\sysinternals'"
 choco install sysinternals --force --force-dependencies -y  
 choco install github --force --force-dependencies -y
@@ -75,3 +78,4 @@ shutdown /r /t 0 /d P:0:0
 
 #install Netlimiter https://www.netlimiter.com/
 #install voicemeter https://www.vb-audio.com/Voicemeeter/index.htm
+#install Quick look from windows store https://www.microsoft.com/en-us/p/quicklook/9nv4bs3l1h4s?activetab=pivot:overviewtab
