@@ -17,6 +17,10 @@ choco install linkshellextension --force --force-dependencies -y
 #install imageglass phot viewer
 choco install imageglass --force --force-dependencies -y
 
+#bulk renaming Utility
+choco install bulkrenameutility --force --force-dependencies -y
+
+
 # install sysinternals to  C:\ProgramData\chocolatey\lib\sysinternals\tools if you want to change the location use --params "'/installationpath:C:\ProgramData\sysinternals'"
 choco install sysinternals --force --force-dependencies -y  
 choco install github --force --force-dependencies -y
