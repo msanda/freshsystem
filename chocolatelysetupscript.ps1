@@ -8,6 +8,9 @@ choco list -lo
 # update powershell
 choco install powershell --force --force-dependencies -y
 
+#install Powertoys
+choco install powertoys --force --force-dependencies -y
+
 # install sysinternals to  C:\ProgramData\chocolatey\lib\sysinternals\tools if you want to change the location use --params "'/installationpath:C:\ProgramData\sysinternals'"
 choco install sysinternals --force --force-dependencies -y  
 choco install github --force --force-dependencies -y
@@ -66,3 +69,6 @@ mkdir $env:USERPROFILE\.ssh
 
 # restart Computer after everything has been installed
 shutdown /r /t 0 /d P:0:0
+
+#install Netlimiter https://www.netlimiter.com/
+#install voicemeter https://www.vb-audio.com/Voicemeeter/index.htm
