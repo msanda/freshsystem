@@ -11,6 +11,9 @@ choco install powershell --force --force-dependencies -y
 #install Powertoys
 choco install powertoys --force --force-dependencies -y
 
+#install link shell extension
+choco install linkshellextension --force --force-dependencies -y
+
 # install sysinternals to  C:\ProgramData\chocolatey\lib\sysinternals\tools if you want to change the location use --params "'/installationpath:C:\ProgramData\sysinternals'"
 choco install sysinternals --force --force-dependencies -y  
 choco install github --force --force-dependencies -y
