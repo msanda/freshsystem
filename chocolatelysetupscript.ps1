@@ -33,6 +33,9 @@ choco install visualstudiocode --force --force-dependencies -y
 #choco install vivaldi --force --force-dependencies -y
 choco install firefox --force --force-dependencies -y
 
+#best markdown tool for windows
+choco install typora --force --force-dependencies -y
+
 # if you need sql management studio
 #choco install mssqlservermanagementstudio2014express
 
