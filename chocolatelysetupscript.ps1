@@ -83,3 +83,4 @@ shutdown /r /t 0 /d P:0:0
 #install Netlimiter https://www.netlimiter.com/
 #install voicemeter https://www.vb-audio.com/Voicemeeter/index.htm
 #install Quick look from windows store https://www.microsoft.com/en-us/p/quicklook/9nv4bs3l1h4s?activetab=pivot:overviewtab
+#install latest version of powershell iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
