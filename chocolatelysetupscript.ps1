@@ -27,20 +27,19 @@ choco install github --force --force-dependencies -y
 choco install poshgit --force --force-dependencies -y
 choco install azurestorageexplorer --force --force-dependencies -y
 #Azurepowershell is disabled for now due to it closing the powershell window on install. 
-#choco install windowsazurepowershell --force --force-dependencies -y
+choco install azure-cli --force --force-dependencies -y
 choco install visualstudiocode --force --force-dependencies -y
 #browser Selection firefox quantum is my new default dev browser
-#choco install vivaldi --force --force-dependencies -y
 choco install firefox --force --force-dependencies -y
 
 #best markdown tool for windows
 choco install typora --force --force-dependencies -y
 
 # if you need sql management studio
-#choco install mssqlservermanagementstudio2014express
+choco install sql-server-management-studio --force --force-dependencies -y
 
 #notepad Alternative. i prefer notepad2 
-choco install notepad2 --force --force-dependencies -y
+choco install notepad3 --force --force-dependencies -y
 
 #Need to find a replacement for srwareiron. best alternative for now is avira scout, but its not availble via chocolatey yet. 
 #choco install srwareiron.install --force --force-dependencies -y
@@ -50,12 +49,13 @@ choco install 7zip.install --force --force-dependencies -y
 #cints node.js.install -version 4.4.7
 choco install webstorm --force --force-dependencies -y
 #install xshell
-choco install mongochef --force --force-dependencies -y
+#use for mongo DB developement
+#choco install mongochef --force --force-dependencies -y
 choco install fiddler4 --force --force-dependencies -y
 
 #python code editor. comment it out if you dont need it
 choco install pycharm-professional --force --force-dependencies -y
-choco install visualstudio2017enterprise --installargs "/ProductKey YOURKEYHERE /InstallSelectableItems WebTools;SQL;PowershellTools" -y
+choco install visualstudio2019enterprise --installargs "/ProductKey YOURKEYHERE /InstallSelectableItems WebTools;SQL;PowershellTools" -y
 
 
 #I personally do network test form my machine to others, so this stays. 
@@ -64,7 +64,9 @@ Install-Module -Name Psake
 Install-Module Pester -Force -SkipPublisherCheck
 Install-Module -Name PSScriptAnalyzer
 
-Invoke-Expression "cmd.exe /C start https://mix.office.com/Snip"
+
+#Mix is no longer supported by microsoft
+#Invoke-Expression "cmd.exe /C start https://mix.office.com/Snip"
 #download telerik api testing https://www.telerik.com/download-trial-file/v2/teststudio-apis
 #download GitKraken  https://www.gitkraken.com/
 
