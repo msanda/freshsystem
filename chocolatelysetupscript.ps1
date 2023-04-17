@@ -28,6 +28,7 @@ choco install poshgit --force --force-dependencies -y
 choco install azurestorageexplorer --force --force-dependencies -y
 #Azurepowershell is disabled for now due to it closing the powershell window on install. 
 choco install azure-cli --force --force-dependencies -y
+Install-Module -Name Az -Repository PSGallery -Force
 choco install visualstudiocode --force --force-dependencies -y
 #browser Selection firefox quantum is my new default dev browser
 choco install firefox --force --force-dependencies -y
